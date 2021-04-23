@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">DORAMCH</a>
@@ -215,40 +218,45 @@
           </div>
         </div>
       </div>
-        <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="ratio ratio-16x9 mb-5">
-          <iframe src="//ok.ru/videoembed/26554010360" frameborder="0" allow="autoplay" allowfullscreen></src=>" title="YouTube video" allowfullscreen></iframe>
-        </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="">
+            <div class="ratio ratio-16x9 mb-5">
+              <iframe src="//ok.ru/videoembed/26554010360" frameborder="0" allow="autoplay" allowfullscreen></src=>" title="YouTube video" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="swiper-slide"><img src="">
+            <div class="ratio ratio-16x9 ">
+              <iframe src="//ok.ru/videoembed/1986211744292" style="border-width:0px" frameborder="0" allow="autoplay" allowfullscreen></src=>" title="YouTube video" allowfullscreen></iframe>
+            </div> 
+          </div>
+          <div class="swiper-slide"><img src="">
+            <div class="ratio ratio-16x9 mb-5">
+              <iframe src="//ok.ru/videoembed/680827882020" frameborder="0" allow="autoplay" allowfullscreen></src=>" title="YouTube video" allowfullscreen></iframe>
+            </div>
+          </div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-slide">
-        <div class="ratio ratio-16x9 ">
-          <iframe src="//ok.ru/videoembed/1986211744292" style="border-width:0px" frameborder="0" allow="autoplay" allowfullscreen></src=>" title="YouTube video" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="ratio ratio-16x9 mb-5">
-          <iframe src="//ok.ru/videoembed/680827882020" frameborder="0" allow="autoplay" allowfullscreen></src=>" title="YouTube video" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="../package/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-      },
-    });
-  </script>
+    
+      <!-- Swiper JS -->
+      <script src="../package/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 1,
+          centeredSlides: false,
+          slidesPerGroupSkip: 1,
+          grabCursor: true,
+          keyboard: { enabled: true },
+          breakpoints: { 769: { slidesPerView: 2, slidesPerGroup: 2 } },
+          scrollbar: { el: '.swiper-scrollbar' },
+          navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+          pagination: { el: '.swiper-pagination', clickable: true }
+        });
+      </script>
 </body>
 </html>
